@@ -8,8 +8,8 @@
   <link rel="stylesheet" href="css/styles.css">
   <style>
     .mySlides {
-      /* display: none; */
-      /* opacity: 0; */
+      display: none;
+      opacity: 0;
       background-color: #663399;
       height: 100%;
       width: 100%;
@@ -18,7 +18,7 @@
     .stop{
       width: 40vw;
       height: 20rem;
-      background-color: orange;
+      background-color: rgb(255, 255, 255);
       position: relative;
     }
 
@@ -26,10 +26,21 @@
       position: absolute;
       top: 0;
       left: 0;
+      animation: fade-in-out 5s 0s 1;
+      
     }
 
     @keyframes fade-in-out {
-      
+      15%{
+        opacity: 1;
+      }
+      99.5%{
+        opacity: 1;
+      }
+      100%{
+        opacity: 0;
+      }
+
     }
   </style>
 </head>

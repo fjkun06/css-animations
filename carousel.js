@@ -80,13 +80,13 @@ function showDivs(n) {
   }
 
   for (i = 0; i < slides.length; i++) {
-    slides[i].style.opacity = "0";
-    // slides[i].style.display = "none";
+    // slides[i].style.opacity = "0";
+    slides[i].style.display = "none";
   }
   // for (i = 0; i < btns.length; i++) {
   //   btns[i].className = btns[i].className.replace(" w3-red", "");
   // }
-  slides[slideIndex - 1].style.opacity = "1";
-  // slides[slideIndex - 1].style.display = "block";
+  // slides[slideIndex - 1].style.opacity = "1";
+  slides[slideIndex - 1].style.display = "block";
   btns[slideIndex - 1].className += " w3-red";
 }
